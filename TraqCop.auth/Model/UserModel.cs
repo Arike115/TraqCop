@@ -14,7 +14,6 @@ namespace TraqCop.auth.Model
         }
         public string LastName { get; set; }
         public string FirstName { get; set; }
-        public string MiddleName { get; set; }
         public int Gender { get; set; }
         public bool Activated { get; set; }
         public bool IsDeleted { get; set; }
@@ -22,11 +21,8 @@ namespace TraqCop.auth.Model
         public DateTime? ModifiedOn { get; set; }
         public string CreatedBy { get; set; }
         public string ModifiedBy { get; set; }
-        public string DeletedBy { get; set; }
-        public DateTime? DeletedOn { get; set; }
-        public string Department { get; set; }
         public bool IsPasswordDefault { get; set; }
-        public string StaffNo { get; set; }
+       
     }
 
     public class UserClaims : IdentityUserClaim<Guid>
